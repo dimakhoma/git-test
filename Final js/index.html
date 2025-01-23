@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainTimer">01:00</div>
+      <div class="buttonsBlock">
+        <button class="mainButt" id="startBt">Start game!</button>
+        <button class="mainButt" id="checkRes">Check result</button>
+        <button class="mainButt" id="newGame">New game</button>
+      </div>
+      <div class="puzzleBoxes">
+        <div class="leftBlock block">
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+          <div class="box"><div class="puzik"></div></div>
+        </div>
+        <div class="rightBlock block">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal-block modal-sure">
+          <p>
+            You still have time, you sure? <span class="modal-time">01:00</span>
+          </p>
+          <form>
+            <button type="button" class="btn btn-closeSure">Close</button>
+            <button type="button" class="btn btn-check">Check</button>
+          </form>
+        </div>
+        <div class="modal-block modal-lose">
+          <p>It's a pity, but you lost</p>
+          <form>
+            <button type="button" class="btn btn-closeLose">Close</button>
+          </form>
+        </div>
+        <div class="modal-block modal-win">
+          <p>Woohoo, well done, do it!</p>
+          <form>
+            <button type="button" class="btn btn-closeWin">Close</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"
+      integrity="sha256-9zljDKpE/mQxmaR4V2cGVaQ7arF3CcXxarvgr7Sj8Uc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

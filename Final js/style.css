@@ -1,0 +1,139 @@
+.сontainer{
+    width: 1000px;
+    margin: 150px auto;
+}
+.mainTimer{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 auto;
+}
+.buttonsBlock{
+    width: 950px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.mainButt{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    background-color: rgb(250, 31, 75);
+    color: white;
+    cursor: pointer;
+}
+.mainButt:disabled {
+  background-color: rgb(230, 111, 111);
+  color: rgba(255, 255, 255, 0.7); 
+  cursor: not-allowed; 
+  box-shadow: none; 
+  opacity: 0.7; 
+}
+.puzzleBoxes{
+    width: 950px;
+    height: 450px;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.block{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px;
+    background-color: lavender;
+    box-shadow: 2px 2px 8px 8px black;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+.puzik{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    background-image: url(images.jpg);
+    background-size: 400px 400px;
+}
+.modal {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .modal-block {
+    display: none;
+    width: 500px;
+    height: 175px;  
+    margin: 0 auto;
+    padding: 30px 0 15px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(105, 105, 105);
+    border-radius: 5px;
+    position: fixed;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+  .modal-block p {
+    padding: 20px;
+    border-top: 1px solid rgb(199, 198, 198);
+    border-bottom: 1px solid rgb(199, 198, 198);
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .modal-block form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .modal-sure.active, .modal-win.active, .modal-lose.active {
+    top: 50px; 
+  }
+  .btn {
+    cursor: pointer;
+    margin: 15px 5px;
+    padding: 10px 15px;
+    background-color: rgb(235, 51, 51);
+    border: 1px solid rgb(207, 45, 45);
+    border-radius: 5px;
+    color: rgb(246, 251, 255);
+  }
+  .btn:hover {
+    background-color: rgb(207, 45, 45);
+  }
+  .btn:focus {
+    background-color: rgb(224, 4, 4);
+    box-shadow: 0 0 3px 0 rgb(224, 4, 4);
+    border: none;
+  }
+  .btn:disabled {
+    background-color: rgb(230, 111, 111);
+    border: none;
+  }
+  .btn-check {
+    background-color: rgb(48, 172, 48);
+    border: 1px solid rgb(20, 138, 20);
+  }
+  .btn-check:hover {
+    background-color: rgb(13, 136, 13);
+  }
